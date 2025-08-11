@@ -55,8 +55,9 @@ Complete the exercise in the space below:
 const isCharAVowel = (char) => {
     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
         return true
-    }
+    } else {
     return false
+    }
 }
 console.log('Exercise 3 Result:', isCharAVowel('a'))
 

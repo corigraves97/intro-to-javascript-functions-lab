@@ -52,15 +52,13 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
-const isCharAVowel = (char) =>{
-    let vowel = 'a' || 'e' || 'i' || 'o' || 'u' || 'A' || 'E' || 'I' || 'O' || 'U'
-    if (char === vowel){
-        return true 
-    } else {
-        return false
+const isCharAVowel = (char) => {
+    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+        return true
     }
+    return false
 }
-console.log('Exercise 3 Result:', isCharAVowel("a"))
+console.log('Exercise 3 Result:', isCharAVowel('a'))
 
 /* Exercise 4: generateEmail()
 
@@ -209,11 +207,11 @@ Complete the exercise in the space below:
 const calculateGrade = (score) => {
     if (score >= 90){
         return 'A'
-    } else if (score >= 80 && score <= 89){
+    } else if (score >= 80){
         return 'B'
-    } else if ( score >= 70 && score <= 79){
+    } else if ( score >= 70){
         return 'C'
-    } else if (score >= 60 && score <=69){
+    } else if (score >= 60){
         return 'D'
     } else {
         return 'F'
